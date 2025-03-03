@@ -31,12 +31,8 @@
 #define MEH LS(LC(LALT))
 
 //Keyboard commands
-#define SNIP LS(LGUI(S))
-#define DELWORD LC(BSPC)
-#define UNDO LC(Z)
-#define CUT LC(X)
-#deifne COPY LC(C)
-#define PASTE LC(V)
+#define SNIP &kp LS(LGUI(S))
+#define DELWORD &kp LC(BSPC)
 
 /* ------------------------ general config ----------------------- */
 
@@ -129,9 +125,9 @@ MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
         compatible = "zmk,keymap";
         default_layer { // Alphabet
             bindings = <
-            &gresc        &kp Q         &kp W        &kp E        &kp R         &kp T              &kp Y  &kp U         &kp I           &kp O        &kp P                 &kp BSPC   
-            &kp DELWORD  &hml LCTRL A   &hml LALT S   &hml LGUI D    &hml LSHFT F    &kp G        &kp H  &hmr RSHFT J  &hmr RGUI K     &hmr LALT L  &hmr RCTRL SEMICOLON  &kp APOS
-            &caps_word    &hml UNDO Z  &hml CUT X  &hml COPY C  &hml PASTE V  &kp B        &kp N  &kp M         &hmr_meh MEH 0  &dot_morph   &qexcl                &kp SNIP
+            &gresc       &kp Q         &kp W        &kp E        &kp R         &kp T              &kp Y  &kp U         &kp I           &kp O        &kp P                 &kp BSPC   
+            DELWORD  &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G              &kp H  &hmr RSHFT J  &hmr RGUI K     &hmr LALT L  &hmr RCTRL SEMICOLON  &kp APOS
+            &caps_word   &kp Z         &kp X        &kp C        &kp V         &kp B              &kp N  &kp M         &hmr_meh MEH 0  &dot_morph   &qexcl                SNIP
                                                  &lt UTIL ESC     &sl SYM    &kp SPACE            &kp RET  &lt NUM BSPC  &lt FUN DEL
             >;
         };
