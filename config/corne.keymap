@@ -32,7 +32,6 @@
 
 //Keyboard commands
 #define SNIP &kp LS(LGUI(S))
-#define DELWORD &kp LC(BSPC)
 
 /* ------------------------ general config ----------------------- */
 
@@ -123,22 +122,22 @@ MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
     };
     keymap {
         compatible = "zmk,keymap";
-        /*default_layer { // Alphabet
+        default_layer { // Alphabet
             bindings = <
             &gresc       &kp Q         &kp W        &kp E        &kp R         &kp T              &kp Y  &kp U         &kp I           &kp O        &kp P                 &kp BSPC   
-            DELWORD  &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G              &kp H  &hmr RSHFT J  &hmr RGUI K     &hmr LALT L  &hmr RCTRL SEMICOLON  &kp APOS
-            &kp Z   &kp Z         &kp X        &kp C        &kp V         &kp B              &kp N  &kp M         &kp z  &kp z   &kp z                &kp z 
-                                                 &lt UTIL ESC     &kp z    &kp SPACE            &kp RET  &lt NUM BSPC  &lt FUN DEL
+            &kp LC(BSPC)  &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G              &kp H  &hmr RSHFT J  &hmr RGUI K     &hmr LALT L  &hmr RCTRL SEMICOLON  &kp APOS
+            &caps_word   &kp Z         &kp X        &kp C        &kp V         &kp B              &kp N  &kp M         &kp z  &kp z   &kp z                &kp z 
+                                                 &lt UTIL ESC     &lt NAV SPACE    &sk LSHFT            &kp RET  &lt NUM BSPC  &lt FUN DEL
             >;
-        };*/
-        default_layer { // Alphabet
+        };
+        /*default_layer { // Alphabet
             bindings = <
             &gresc    &kp Q         &kp W        &kp E        &kp R         &kp T              &kp Y  &kp U         &kp I           &kp O        &kp P                 &kp BSPC   
             &kp LC(BSPC)   &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G              &kp H  &hmr RSHFT J  &hmr RGUI K     &hmr LALT L  &hmr RCTRL SEMICOLON  &kp APOS
             &caps_word  &kp Z         &kp X        &hml MEH C   &hml HYP V    &kp B              &kp N  &hmr HYP M    &hmr_meh MEH 0  &dot_morph   &qexcl                &kp TAB
                                      &lt UTIL ESC     &lt NAV SPACE    &sk LSHFT                &kp RET       &lt NUM BSPC       &lt FUN DEL
             >;
-        };
+        };*/
         nav_layer { 
             bindings = <
             ___          ___          ___             ___             ___                &kp INS       &kp HOME          &kp UP          &kp END       &kp PAGE_UP 
