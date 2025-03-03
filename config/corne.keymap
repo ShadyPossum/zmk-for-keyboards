@@ -20,6 +20,7 @@
 #define NUM 2
 #define FUN 3
 #define UTIL 4
+#define SYM 5
 
 // navigation bindings for back/forward and prev tab/next tab
 #define BACK &kp LC(LBKT)
@@ -28,6 +29,9 @@
 // hyper and meh keys
 #define HYP LS(LC(LA(LGUI)))
 #define MEH LS(LC(LALT))
+
+//Keyboard commands
+#define SNIP LS(LGUI(S))
 
 /* ------------------------ general config ----------------------- */
 
@@ -120,10 +124,10 @@ MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
         compatible = "zmk,keymap";
         default_layer { // Alphabet
             bindings = <
-            &gresc    &kp Q         &kp W        &kp E        &kp R         &kp T              &kp Y  &kp U         &kp I           &kp O        &kp P                 &kp BSPC   
-            &kp LC(BSPC)   &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G              &kp H  &hmr RSHFT J  &hmr RGUI K     &hmr LALT L  &hmr RCTRL SEMICOLON  &kp APOS
-            &caps_word  &kp Z         &kp X        &hml MEH C   &hml HYP V    &kp B              &kp N  &hmr HYP M    &hmr_meh MEH 0  &dot_morph   &qexcl                &kp TAB
-                                     &lt UTIL ESC     &lt NAV SPACE    &sk LSHFT                &kp RET       &lt NUM BSPC       &lt FUN DEL
+            &gresc        &kp Q         &kp W        &kp E        &kp R         &kp T              &kp Y  &kp U         &kp I           &kp O        &kp P                 &kp BSPC   
+            &kp LC(BSPC)  &hml LCTRL A   &hml LALT S   &hml LGUI D    &hml LSHFT F    &kp G        &kp H  &hmr RSHFT J  &hmr RGUI K     &hmr LALT L  &hmr RCTRL SEMICOLON  &kp APOS
+            &caps_word    &hml K_UNDO Z  &hml K_CUT X  &hml K_COPY C  &hml K_PASTE V  &kp B        &kp N  &kp M         &hmr_meh MEH 0  &dot_morph   &qexcl                &kp SNIP
+                                                 &lt UTIL ESC     &sl SYM    &kp SPACE            &kp RET  &lt NUM BSPC  &lt FUN DEL
             >;
         };
         nav_layer { 
@@ -158,6 +162,14 @@ MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
                                       ___             ___             ___                ___           ___               &kp C_MUTE
             >;
         };  
+        symbol_layer { // Symbols
+            bindings = <
+            ___    &kp APOS   &kp LT    &kp GT    &kp LS(APOS)   &kp DOT              &kp AMPS   &kp SEMICOLON  &kp LBKT  &kp RBKT  &kp PRCNT  ___   
+            ___    &kp EXCL   &kp MINUS &kp PLUS  &kp EQUAL      &kp HASH             &kp PIPE   &kp COLON      &kp LPAR  &kp RPAR  &kp QMARK  ___
+            ___    &kp CARET  &kp FSLH  &kp STAR  &kp BACKSLASH   ___                 &kp TILDE  &kp DOLLAR     &kp LBRC  &kp RBRC  &kp AT     ___
+                                             ___  &lt NAV SPACE  &kp SPACE             &kp RET       &lt NUM BSPC       &lt FUN DEL
+            >;
+        };
     };
 };
     
