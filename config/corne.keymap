@@ -127,7 +127,7 @@ MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
             bindings = <
             &gresc       &kp Q         &kp W        &kp E        &kp R         &kp T              &kp Y  &kp U         &kp I           &kp O        &kp P                 &kp BSPC   
             DELWORD  &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G              &kp H  &hmr RSHFT J  &hmr RGUI K     &hmr LALT L  &hmr RCTRL SEMICOLON  &kp APOS
-            &caps_word   &kp Z         &kp X        &kp C        &kp V         &kp B              &kp N  &kp M         &hmr_meh MEH 0  &dot_morph   &qexcl                SNIP
+            &kp Z   &kp Z         &kp X        &kp C        &kp V         &kp B              &kp N  &kp M         &hmr_meh MEH 0  &dot_morph   &qexcl                SNIP
                                                  &lt UTIL ESC     &sl SYM    &kp SPACE            &kp RET  &lt NUM BSPC  &lt FUN DEL
             >;
         };
