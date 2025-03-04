@@ -6,6 +6,9 @@ manifest:
       url-base: https://github.com/petejohanson
     - name: urob
       url-base: https://github.com/urob
+    # nice_oled
+    - name: mctechnology17
+      url-base: https://github.com/mctechnology17
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -13,6 +16,10 @@ manifest:
       import: app/west.yml
     - name: zmk-helpers
       remote: urob
+      revision: main
+    # nice_oled
+    - name: zmk-nice-oled
+      remote: mctechnology17
       revision: main
   self:
     path: config

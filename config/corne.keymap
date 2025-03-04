@@ -123,6 +123,7 @@ MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
     keymap {
         compatible = "zmk,keymap";
         default_layer { // Alphabet
+            display-name = "Base";
             bindings = <
             &gresc        &kp Q         &kp W         &kp E         &kp R         &kp T              &kp Y  &kp U         &kp I           &kp O        &kp P                 &kp BSPC   
             &kp LC(BSPC)  &hml LCTRL A  &hml LALT S   &hml LGUI D   &hml LSHFT F  &kp G              &kp H  &hmr RSHFT J  &hmr RGUI K     &hmr LALT L  &hmr RCTRL SEMICOLON  &kp APOS
@@ -131,6 +132,7 @@ MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
             >;
         };
         nav_layer { 
+            display-name = "Nav";
             bindings = <
             ___          ___          ___             ___             ___                &kp INS       &kp HOME          &kp UP          &kp END       &kp PAGE_UP 
             &kp LCTRL     &kp LALT     &kp LGUI       &kp LSHFT       ___                ___           &kp LEFT          &kp DOWN        &kp RIGHT     &kp PAGE_DOWN
@@ -139,6 +141,7 @@ MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
             >;
         }; 
         num_layer {
+            display-name = "Num";
             bindings = <
              ___      &kp PLUS     &kp N7       &kp N8          &kp  N9         &kp STAR                      ___           ___               ___             ___           ___ 
              ___      &kp EQUAL    &kp N4       &kp N5          &kp  N6         &kp N0                     ___           &kp LSHFT         &kp LGUI        &kp LALT      &kp LCTRL
@@ -147,6 +150,7 @@ MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
             >;
         };
         fun_layer {
+            display-name = "Fun";
             bindings = <
             &kp F12      &kp F7       &kp F8          &kp F9          ___                ___           ___               ___             ___           ___
             &kp F11      &kp F4       &kp F5          &kp F6          ___                ___           &kp LSHFT         &kp LGUI        &kp LALT      &kp LCTRL 
@@ -155,6 +159,7 @@ MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
             >;
         };
         util_layer {
+            display-name = "Util";
             bindings = <
             &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_CLR      ___                ___           ___               &kp C_VOL_UP    ___           ___
             &kp LCTRL     &kp LALT     &kp LGUI       &kp LSHFT      ___                ___           ___                &kp C_VOL_DN    ___           ___ 
@@ -163,6 +168,7 @@ MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
             >;
         };  
         symbol_layer { // Symbols
+            display-name = "Symbols";
             bindings = <
             ___    &kp APOS   &kp LT    &kp GT    &kp LS(APOS)   &kp DOT              &kp AMPS   &kp SEMICOLON  &kp LBKT  &kp RBKT  &kp PRCNT  ___   
             ___    &kp EXCL   &kp MINUS &kp PLUS  &kp EQUAL      &kp HASH             &kp PIPE   &kp COLON      &kp LPAR  &kp RPAR  &kp QMARK  ___
