@@ -18,9 +18,8 @@
 #define BASE 0
 #define NAV 1
 #define NUM 2
-#define FUN 3
-#define UTIL 4
-#define SYM 5
+#define UTIL 3
+#define SYM 4
 
 // navigation bindings for back/forward and prev tab/next tab
 #define BACK &kp LC(LBKT)
