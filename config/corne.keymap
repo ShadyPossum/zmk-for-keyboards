@@ -163,7 +163,7 @@ MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
             ___    &kp APOS   &kp LT    &kp GT    &kp LS(APOS)   &kp DOT              &kp AMPS   &kp SEMICOLON  &kp LBKT  &kp RBKT  &kp PRCNT  ___   
             ___    &kp EXCL   &kp MINUS &kp PLUS  &kp EQUAL      &kp HASH             &kp PIPE   &kp COLON      &kp LPAR  &kp RPAR  &kp QMARK  ___
             ___    &kp CARET  &kp FSLH  &kp STAR  &kp BACKSLASH   ___                 &kp TILDE  &kp DOLLAR     &kp LBRC  &kp RBRC  &kp AT     ___
-                                             ___  ___  &kp SPACE             &kp RET       &tog NUM       &lt FUN DEL
+                                             ___  ___  &kp SPACE             &kp RET       &tog NUM       ___
             >;
         };
     };
