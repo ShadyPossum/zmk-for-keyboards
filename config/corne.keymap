@@ -127,8 +127,8 @@ MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
             bindings = <
             &gresc        &kp Q         &kp W         &kp E         &kp R         &kp T              &kp Y  &kp U         &kp I           &kp O        &kp P                 &kp BSPC   
             &kp LC(BSPC)  &hml LCTRL A  &hml LALT S   &hml LGUI D   &hml LSHFT F  &kp G              &kp H  &hmr RSHFT J  &hmr RGUI K     &hmr LALT L  &hmr RCTRL SEMICOLON  &kp APOS
-            &caps_word    &hml LC(Z) Z  &hml LC(X) X  &hml LC(C) C  &hml LC(V) V  &kp B              &kp N  &kp M         &hmr_meh MEH 0  &dot_morph   &qexcl                SNIP
-                                            &tog NAV     &sl SYM    &kp SPACE              &kp RET    &tog NUM    &lt FUN DEL
+            &kp CAPS    &hml LC(Z) Z  &hml LC(X) X  &hml LC(C) C  &hml LC(V) V  &kp B              &kp N  &kp M         &hmr_meh MEH 0  &dot_morph   &qexcl                SNIP
+                                            &tog NAV     &sl SYM    &kp SPACE              &kp RET    &tog NUM    &lt UTIL DEL
             >;
         };
         nav_layer { 
@@ -137,7 +137,7 @@ MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
             ___        ___       ___       ___             ___      ___                &kp INS  &kp HOME   &kp UP    &kp END    &kp PAGE_UP    ___
             &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT       ___      ___                ___      &kp LEFT   &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  ___
             ___        ___       ___       &kp MEH         &kp HYP  ___                ___      &kp GRAVE  ___       &kp FSLH   ___            ___
-                                     ___            ___             ___                &kp RET       &kp BSPC          &kp DEL
+                                     &tog NAV         ___           ___                &kp RET       &kp BSPC          &kp DEL
             >;
         }; 
         num_layer {
@@ -146,7 +146,7 @@ MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
              ___      &kp PLUS     &kp N7       &kp N8          &kp  N9         &kp STAR                   ___           ___               ___             ___           ___         ___
              ___      &kp EQUAL    &kp N4       &kp N5          &kp  N6         &kp N0                     ___           &kp LSHFT         &kp LGUI        &kp LALT      &kp LCTRL   ___
             &kp LBKT  &kp MINUS    &kp N1       &kp N2          &kp  N3         &kp FSLH                   ___           &kp HYP           &kp MEH         ___           ___         &kp RBKT
-                                      &kp BSLH        &kp  DOT        &kp SEMI                             ___           &tog BASE               ___
+                                      &kp BSLH        &kp  DOT        &kp SEMI                             ___           &tog NUM               ___
             >;
         };
         util_layer {
@@ -164,7 +164,7 @@ MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
             ___    &kp APOS   &kp LT    &kp GT    &kp LS(APOS)   &kp DOT              &kp AMPS   &kp SEMICOLON  &kp LBKT  &kp RBKT  &kp PRCNT  ___   
             ___    &kp EXCL   &kp MINUS &kp PLUS  &kp EQUAL      &kp HASH             &kp PIPE   &kp COLON      &kp LPAR  &kp RPAR  &kp QMARK  ___
             ___    &kp CARET  &kp FSLH  &kp STAR  &kp BACKSLASH   ___                 &kp TILDE  &kp DOLLAR     &kp LBRC  &kp RBRC  &kp AT     ___
-                                             ___  &tog BASE  &kp SPACE             &kp RET       &tog NUM       &lt FUN DEL
+                                             ___  ___  &kp SPACE             &kp RET       &tog NUM       &lt FUN DEL
             >;
         };
     };
