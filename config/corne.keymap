@@ -127,7 +127,7 @@ MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
             &hmr &gresc TAB       &kp Q         &kp W         &kp E         &kp R         &kp T              &kp Y  &kp U         &kp I           &kp O        &kp P                 &kp BSPC   
             &kp LC(BSPC)  &hml LCTRL A  &hml LALT S   &hml LGUI D   &hml LSHFT F  &kp G              &kp H  &hmr RSHFT J  &hmr RGUI K     &hmr LALT L  &hmr RCTRL SEMICOLON  &kp APOS
             &kp CAPS    &hml LC(Z) Z  &hml LC(X) X  &hml LC(C) C  &hml LC(V) V  &kp B                &kp N  &kp M         &kp COMMA       &kp DOT      &kp SLASH             SNIP
-                                            &tog NAV     &sl SYM    &kp SPACE              &kp RET    &tog NUM    &sk SHIFT
+                                            &tog NAV     &sl SYM    &kp SPACE              &kp RET    &tog NUM    &sk LSHIFT
             >;
         };
         nav_layer { 
