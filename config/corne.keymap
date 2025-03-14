@@ -81,6 +81,21 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
 // special HRMs for the right meh key, as it involves a modmorph
 MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
 
+
+/ {
+    macros {
+        numSpace: numSpace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &tog NUM>
+                , <&macro_release &kp SPACE>
+                ;
+        };
+    };
+};
+
+
 / {
     behaviors {
         // tap: dot | shift + tap: colon | shift + control + tap: greater_than
@@ -145,7 +160,7 @@ MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
              ___      &kp PLUS     &kp N7       &kp N8          &kp  N9         &kp STAR                   ___           ___               ___             ___           ___         ___
              ___      &kp EQUAL    &kp N4       &kp N5          &kp  N6         &kp N0                     ___           &kp LSHFT         &kp LGUI        &kp LALT      &kp LCTRL   ___
             &kp LBKT  &kp MINUS    &kp N1       &kp N2          &kp  N3         &kp FSLH                   ___           &kp HYP           &kp MEH         ___           ___         &kp RBKT
-                                      &kp BSLH        &kp  DOT        ___                             ___           &tog NUM               ___
+                                      &kp BSLH        &kp  DOT        &numSpace                             ___           &tog NUM               ___
             >;
         };
         util_layer {
