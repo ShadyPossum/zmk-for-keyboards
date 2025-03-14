@@ -88,8 +88,7 @@ MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &tog NUM>
-                , <&macro_release &kp SPACE>
+                = <&macro_tap &tog NUM &kp SPACE>
                 ;
         };
     };
