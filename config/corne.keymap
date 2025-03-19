@@ -147,10 +147,10 @@ MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
         nav_layer { 
             display-name = "Nav";
             bindings = <
-            ___        ___       ___       ___             ___      ___                &kp INS  &kp HOME   &kp UP    &kp END    &kp PAGE_UP    ___
-            &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT       ___      ___                ___      &kp LEFT   &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  ___
-            ___        ___       ___       &kp MEH         &kp HYP  ___                ___      &kp GRAVE  ___       &kp FSLH   ___            ___
-                                     &tog NAV         ___           ___                &kp RET       &kp BSPC          &kp DEL
+            ___        ___       ___       ___     &rgb_ug RGB_BRI      &rgb_ug RGB_BRI                &kp INS  &kp HOME   &kp UP    &kp END    &kp PAGE_UP    ___
+            ___        ___       ___       ___     &rgb_ug RGB_SPI      &rgb_ug RGB_SPD                ___      &kp LEFT   &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  ___
+            ___        ___       ___       ___     &rgb_ug RGB_EFF      &rgb_ug RGB_EFR                ___      &kp GRAVE  ___       &kp FSLH   ___            ___
+                                     &tog NAV       &rgb_ug RGB_TOG           ___                      &kp RET       &kp BSPC          &kp DEL
             >;
         }; 
         num_layer {
